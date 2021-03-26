@@ -62,8 +62,8 @@ if __name__ == '__main__':
     f.close()
     d = {'_wps_checkin': _wps_checkin, '_wps_invite': _wps_invite, '_youdao_checkin': _youdao_checkin}
     if len(sys.argv) == 1 or sys.argv[1] not in d:
-        _wps_checkin(data)
-        _wps_invite(data)
+        #_wps_checkin(data)
+        #_wps_invite(data)
         _youdao_checkin(data)
     else:
         d[sys.argv[1]](data)
